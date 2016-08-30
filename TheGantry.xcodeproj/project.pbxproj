@@ -16,6 +16,11 @@
 		8720BCB51D7379B900EDF94D /* TheGantryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720BCB41D7379B900EDF94D /* TheGantryTests.swift */; };
 		8720BCC01D7379B900EDF94D /* TheGantryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720BCBF1D7379B900EDF94D /* TheGantryUITests.swift */; };
 		8720BCCE1D737A1100EDF94D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8720BCCD1D737A1100EDF94D /* GoogleService-Info.plist */; };
+		8726219B1D75135700DC06C6 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8726219A1D75135700DC06C6 /* SignInView.swift */; };
+		8726219E1D7513E300DC06C6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8726219D1D7513E300DC06C6 /* Constants.swift */; };
+		872621A01D75164200DC06C6 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8726219F1D75164200DC06C6 /* RoundButton.swift */; };
+		872621A21D7517E300DC06C6 /* SignInField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872621A11D7517E300DC06C6 /* SignInField.swift */; };
+		872621A41D75190000DC06C6 /* LogInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872621A31D75190000DC06C6 /* LogInButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		8720BCBF1D7379B900EDF94D /* TheGantryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheGantryUITests.swift; sourceTree = "<group>"; };
 		8720BCC11D7379B900EDF94D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8720BCCD1D737A1100EDF94D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8726219A1D75135700DC06C6 /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		8726219D1D7513E300DC06C6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8726219F1D75164200DC06C6 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		872621A11D7517E300DC06C6 /* SignInField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInField.swift; sourceTree = "<group>"; };
+		872621A31D75190000DC06C6 /* LogInButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInButton.swift; sourceTree = "<group>"; };
 		ACA51D3C58872442E893E906 /* Pods-TheGantry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheGantry.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheGantry/Pods-TheGantry.release.xcconfig"; sourceTree = "<group>"; };
 		D1AA763998F9558DA6832B20 /* Pods-TheGantry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheGantry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheGantry/Pods-TheGantry.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +137,7 @@
 				877A06721D737D13008D35B7 /* View */,
 				877A06711D737D0D008D35B7 /* Controller */,
 				877A06741D73BCD2008D35B7 /* Utils */,
+				8726219C1D7513CD00DC06C6 /* Constants */,
 				8720BC9F1D7379B900EDF94D /* AppDelegate.swift */,
 				8720BCA61D7379B900EDF94D /* Assets.xcassets */,
 				8720BCAB1D7379B900EDF94D /* Info.plist */,
@@ -153,6 +164,13 @@
 			path = TheGantryUITests;
 			sourceTree = "<group>";
 		};
+		8726219C1D7513CD00DC06C6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
 		877A06711D737D0D008D35B7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +184,10 @@
 			children = (
 				8720BCA31D7379B900EDF94D /* Main.storyboard */,
 				8720BCA81D7379B900EDF94D /* LaunchScreen.storyboard */,
+				8726219A1D75135700DC06C6 /* SignInView.swift */,
+				8726219F1D75164200DC06C6 /* RoundButton.swift */,
+				872621A11D7517E300DC06C6 /* SignInField.swift */,
+				872621A31D75190000DC06C6 /* LogInButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -180,6 +202,7 @@
 		877A06741D73BCD2008D35B7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				8726219D1D7513E300DC06C6 /* Constants.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -373,8 +396,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8726219B1D75135700DC06C6 /* SignInView.swift in Sources */,
+				872621A01D75164200DC06C6 /* RoundButton.swift in Sources */,
+				872621A41D75190000DC06C6 /* LogInButton.swift in Sources */,
+				872621A21D7517E300DC06C6 /* SignInField.swift in Sources */,
 				8720BCA21D7379B900EDF94D /* SignInVC.swift in Sources */,
 				8720BCA01D7379B900EDF94D /* AppDelegate.swift in Sources */,
+				8726219E1D7513E300DC06C6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
