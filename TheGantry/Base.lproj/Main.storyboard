@@ -67,6 +67,9 @@
                                     <constraint firstAttribute="width" constant="150" id="qSX-Xj-Mcf"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="f"/>
+                                <connections>
+                                    <action selector="fbButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L6N-8L-Lh0"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="vSG-Cr-Ymx">
                                 <subviews>
