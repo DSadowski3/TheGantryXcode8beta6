@@ -83,7 +83,7 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="glP-aR-diu" customClass="SignInField" customModule="TheGantry" customModuleProvider="target">
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IY9-Oy-SEX" customClass="LogInButton" customModule="TheGantry" customModuleProvider="target">
                                                 <color key="backgroundColor" red="0.89411764709999997" green="0.86666666670000003" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -91,6 +91,9 @@
                                                 <state key="normal" title="Sign In">
                                                     <color key="titleColor" red="0.16862745100000001" green="0.63921568630000003" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vTS-nk-ycd"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -116,6 +119,10 @@
                             <constraint firstItem="aLn-Od-Syd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xNX-Jb-w4g"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="VW1-cy-mML" id="7nc-wr-IR8"/>
+                        <outlet property="passwordField" destination="glP-aR-diu" id="HMv-gA-jht"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
