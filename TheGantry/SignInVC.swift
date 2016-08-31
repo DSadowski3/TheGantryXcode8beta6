@@ -10,6 +10,7 @@ import UIKit
 import FBSDKLoginKit
 import FBSDKCoreKit
 import Firebase
+import SwiftKeychainWrapper
 
 class SignInVC: UIViewController {
     
@@ -19,6 +20,12 @@ class SignInVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.stringForKey(KEY_UID) {
+            performSegue(withIdentifier: "goToFeed", sender: nil)
+        }
     }
 
     @IBAction func fbButtonPressed(_ sender: AnyObject) {
@@ -44,6 +51,9 @@ class SignInVC: UIViewController {
                 print("DOMINIK: Unable to authenticate with Firebase")
             } else {
                 print("DOMINIK: successfully atuhenticated with firebase")
+                if let user = user {
+                    self.completeSignIn(id: user.uid)
+                }
             }
         })
     }
@@ -53,17 +63,31 @@ class SignInVC: UIViewController {
             FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
                 if error == nil {
                     print("DOMINIK: Email User authenticated with Firebase")
+                    if let user = user {
+                        self.completeSignIn(id: user.uid)
+                    }
+                    
                 } else {
                     FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
                         if error != nil {
                             print("DOMINIK: Unable to authenticate with Firebase using email")
                         } else {
                             print("DOMINIK: Successfully authenticated with Firebase")
+                            if let user = user{
+                                self.completeSignIn(id: user.uid)
+                            }
+                          
                         }
                     })
                 }
             })
         }
+    }
+    
+    func completeSignIn(id: String) {
+        let keychainResult = KeychainWrapper.setString(id, forkey: KEY_UID)
+        print("DOMNIK: Data saved to keychain \(keychainResult)")
+        performSegue(withIdentifier: "goToFeed", sender: nil)
     }
 
 }
