@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2933FEFBF4B304FBAA9D2C19 /* Pods_TheGantry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6979C61264BD7F5613D761D1 /* Pods_TheGantry.framework */; };
 		871C091F1D77B9AB00D997DA /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C091E1D77B9AB00D997DA /* CircleView.swift */; };
+		871C09211D77C1A900D997DA /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C09201D77C1A900D997DA /* PostCell.swift */; };
 		8720BCA01D7379B900EDF94D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720BC9F1D7379B900EDF94D /* AppDelegate.swift */; };
 		8720BCA21D7379B900EDF94D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720BCA11D7379B900EDF94D /* SignInVC.swift */; };
 		8720BCA51D7379B900EDF94D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8720BCA31D7379B900EDF94D /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		6979C61264BD7F5613D761D1 /* Pods_TheGantry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheGantry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		871C091E1D77B9AB00D997DA /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		871C09201D77C1A900D997DA /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostCell.swift; path = Assets.xcassets/PostCell.swift; sourceTree = "<group>"; };
 		8720BC9C1D7379B900EDF94D /* TheGantry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGantry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8720BC9F1D7379B900EDF94D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8720BCA11D7379B900EDF94D /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				872621A11D7517E300DC06C6 /* SignInField.swift */,
 				872621A31D75190000DC06C6 /* LogInButton.swift */,
 				871C091E1D77B9AB00D997DA /* CircleView.swift */,
+				871C09201D77C1A900D997DA /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				8720BCA21D7379B900EDF94D /* SignInVC.swift in Sources */,
 				8720BCA01D7379B900EDF94D /* AppDelegate.swift in Sources */,
 				8726219E1D7513E300DC06C6 /* Constants.swift in Sources */,
+				871C09211D77C1A900D997DA /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
