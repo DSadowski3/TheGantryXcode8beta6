@@ -1,14 +1,14 @@
 //
-//  SignInView.swift
+//  CircleView.swift
 //  TheGantry
 //
-//  Created by Dominik Sadowski on 8/29/16.
+//  Created by Dominik Sadowski on 8/31/16.
 //  Copyright © 2016 Dominik Sadowski. All rights reserved.
 //
 
 import UIKit
 
-class SignInView: UIView {
+class CircleView: UIImageView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -17,7 +17,11 @@ class SignInView: UIView {
         layer.shadowOpacity = 0.8
         layer.shadowRadius = 5.0
         layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
-        layer.cornerRadius = 2.0
+    }
+    
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        layer.cornerRadius = self.frame.width / 2
     }
 
 }

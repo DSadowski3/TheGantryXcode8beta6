@@ -10,7 +10,7 @@ import UIKit
 import FBSDKLoginKit
 import FBSDKCoreKit
 import Firebase
-import SwiftKeychainWrapper
+//import SwiftKeychainWrapper
 
 class SignInVC: UIViewController {
     
@@ -23,9 +23,11 @@ class SignInVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if let _ = KeychainWrapper.stringForKey(KEY_UID) {
+        /*if let _ = KeychainWrapper.stringForKey(KEY_UID) {
             performSegue(withIdentifier: "goToFeed", sender: nil)
-        }
+        }*/
+        
+        performSegue(withIdentifier: "goToFeed", sender: nil)
     }
 
     @IBAction func fbButtonPressed(_ sender: AnyObject) {
@@ -85,8 +87,8 @@ class SignInVC: UIViewController {
     }
     
     func completeSignIn(id: String) {
-        let keychainResult = KeychainWrapper.setString(id, forkey: KEY_UID)
-        print("DOMNIK: Data saved to keychain \(keychainResult)")
+        //let keychainResult = KeychainWrapper.setString(id, forkey: KEY_UID)
+        //print("DOMNIK: Data saved to keychain \(keychainResult)")
         performSegue(withIdentifier: "goToFeed", sender: nil)
     }
 
