@@ -143,11 +143,15 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1n-kV-IKj" customClass="SignInView" customModule="TheGantry" customModuleProvider="target">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="4Mu-EQ-EFF">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="4Mu-EQ-EFF">
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="43" id="MjD-M5-1xB"/>
                                             <constraint firstAttribute="height" constant="43" id="ZHT-qH-NmH"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="cbJ-F0-oCH" appends="YES" id="ref-UK-Zq2"/>
+                                        </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51p-vJ-MzV">
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="27"/>
@@ -309,9 +313,15 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="fgl-Db-BU7" id="gc6-7b-IYE"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="5N0-fL-brE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ioI-6Y-JrP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cbJ-F0-oCH">
+                    <connections>
+                        <action selector="signOutTapped:" destination="qfK-IB-PNf" id="SAr-E3-NYR"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="776.79999999999995" y="36.431784107946029"/>
         </scene>

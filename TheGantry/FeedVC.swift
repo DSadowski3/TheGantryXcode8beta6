@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -29,6 +30,11 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
+    }
+    
+    @IBAction func signOutTapped(_ sender: AnyObject) {
+        try! FIRAuth.auth()?.signOut()
+        performSegue(withIdentifier: "goToSignIn", sender: nil)
     }
 
 
