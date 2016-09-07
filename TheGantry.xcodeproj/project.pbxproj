@@ -23,6 +23,7 @@
 		872621A01D75164200DC06C6 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8726219F1D75164200DC06C6 /* RoundButton.swift */; };
 		872621A21D7517E300DC06C6 /* SignInField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872621A11D7517E300DC06C6 /* SignInField.swift */; };
 		872621A41D75190000DC06C6 /* LogInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872621A31D75190000DC06C6 /* LogInButton.swift */; };
+		8775AD4B1D7F9D470095FD7C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775AD4A1D7F9D470095FD7C /* Post.swift */; };
 		87E3FE3F1D7A5E9200BCB107 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E3FE3E1D7A5E9200BCB107 /* DataService.swift */; };
 		87F4C0FB1D7678ED00E865E7 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F4C0FA1D7678ED00E865E7 /* FeedVC.swift */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		8726219F1D75164200DC06C6 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		872621A11D7517E300DC06C6 /* SignInField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInField.swift; sourceTree = "<group>"; };
 		872621A31D75190000DC06C6 /* LogInButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInButton.swift; sourceTree = "<group>"; };
+		8775AD4A1D7F9D470095FD7C /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		87E3FE3E1D7A5E9200BCB107 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		87F4C0FA1D7678ED00E865E7 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		ACA51D3C58872442E893E906 /* Pods-TheGantry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheGantry.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheGantry/Pods-TheGantry.release.xcconfig"; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 		877A06731D737D18008D35B7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8775AD4A1D7F9D470095FD7C /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				871C091F1D77B9AB00D997DA /* CircleView.swift in Sources */,
 				8726219B1D75135700DC06C6 /* SignInView.swift in Sources */,
 				872621A01D75164200DC06C6 /* RoundButton.swift in Sources */,
+				8775AD4B1D7F9D470095FD7C /* Post.swift in Sources */,
 				872621A41D75190000DC06C6 /* LogInButton.swift in Sources */,
 				872621A21D7517E300DC06C6 /* SignInField.swift in Sources */,
 				87E3FE3F1D7A5E9200BCB107 /* DataService.swift in Sources */,
